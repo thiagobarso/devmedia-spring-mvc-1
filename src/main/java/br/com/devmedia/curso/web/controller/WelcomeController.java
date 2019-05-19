@@ -8,9 +8,10 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class WelcomeController {
 
-    @RequestMapping(value = "/welcome", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String welcome(){
-        return "welcome";
+//        return "welcome";
+        return "redirect:/usuario/todos";
     }
 
     @RequestMapping(value = "/teste", method = RequestMethod.GET)
